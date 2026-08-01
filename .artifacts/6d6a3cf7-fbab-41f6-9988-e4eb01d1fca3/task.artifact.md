@@ -1,0 +1,4 @@
+- [x] Update `libs.versions.toml` with latest versions for SDK 37
+- [x] Update `app/build.gradle.kts` to target SDK 37 and Java 17
+- [x] Perform Gradle Sync
+- [/] Verify build with `./gradlew assembleDebug`
