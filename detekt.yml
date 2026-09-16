@@ -13,6 +13,9 @@ Compose:
     active: true
     # -- You can optionally define a list of CompositionLocals that are allowed here
     # allowedCompositionLocals: LocalSomething,LocalSomethingElse
+    # LocalSpacing carries the design system's spacing scale, read through
+    # AppTheme.spacing — the conventional theme-value use for a CompositionLocal.
+    allowedCompositionLocals: LocalSpacing
   CompositionLocalNaming:
     active: true
   ContentEmitterReturningValues:
