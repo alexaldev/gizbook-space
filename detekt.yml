@@ -125,3 +125,9 @@ Compose:
     active: true
     # -- You can optionally add your own ViewModel factories here
     # viewModelFactories: hiltViewModel,potatoViewModel
+
+naming:
+  FunctionNaming:
+    # @Composable functions are PascalCase by convention, which the default
+    # [a-z][a-zA-Z0-9]* pattern rejects.
+    ignoreAnnotated: ['Composable']

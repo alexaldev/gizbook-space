@@ -33,6 +33,11 @@ android {
     }
 }
 
+detekt {
+    config.setFrom(rootProject.file("detekt.yml"))
+    buildUponDefaultConfig = true
+}
+
 dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.bundles.compose)
