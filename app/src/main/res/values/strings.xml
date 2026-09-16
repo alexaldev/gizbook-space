@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GizBook Space</string>
+
+    <!-- Bottom navigation bar -->
+    <string name="nav_home">Home</string>
+    <string name="nav_catalogue">Catalogue</string>
+    <string name="nav_libraries">Libraries</string>
+    <string name="nav_settings">Settings</string>
 </resources>
