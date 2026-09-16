@@ -1,4 +1,4 @@
-package io.alexallafi.androidtemplate.presentation.designsystem
+package io.gizmolab.gizbookspace.presentation.designsystem
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

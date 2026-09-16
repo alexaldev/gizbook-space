@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "io.alexallafi.androidtemplate"
+    namespace = "io.gizmolab.gizbookspace"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "io.alexallafi.androidtemplate"
+        applicationId = "io.gizmolab.gizbookspace"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
