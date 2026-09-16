@@ -1,7 +1,7 @@
 [versions]
 projectVersionName = "1.0.0"
 projectVersionCode = "1"
-agp = "9.3.1"
+agp = "9.2.1"
 kotlin = "2.4.10"
 activityKtx = "1.13.0"
 lifecycleViewModel = "2.11.0"
