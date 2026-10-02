@@ -1,0 +1,11 @@
+<resources>
+    <string name="bookdetails_back">Back</string>
+    <string name="bookdetails_add_favorite">Add to favourites</string>
+    <string name="bookdetails_remove_favorite">Remove from favourites</string>
+    <string name="bookdetails_isbn">ISBN %1$s</string>
+    <string name="bookdetails_where_to_find">Where to find it</string>
+    <string name="bookdetails_no_copies">No library holds a copy of this book.</string>
+    <string name="bookdetails_shelf">Shelf %1$s</string>
+    <string name="bookdetails_available">Available</string>
+    <string name="bookdetails_on_loan">On loan</string>
+</resources>

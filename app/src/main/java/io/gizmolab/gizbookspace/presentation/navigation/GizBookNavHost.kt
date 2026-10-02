@@ -4,25 +4,37 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import io.gizmolab.gizbookspace.presentation.screens.CatalogueScreen
-import io.gizmolab.gizbookspace.presentation.screens.HomeScreen
-import io.gizmolab.gizbookspace.presentation.screens.LibrariesScreen
-import io.gizmolab.gizbookspace.presentation.screens.SettingsScreen
+import io.gizmolab.gizbookspace.feature.bookdetails.navigation.bookDetailsScreen
+import io.gizmolab.gizbookspace.feature.bookdetails.navigation.navigateToBookDetails
+import io.gizmolab.gizbookspace.feature.catalogue.navigation.catalogueScreen
+import io.gizmolab.gizbookspace.feature.favorites.navigation.favoritesScreen
+import io.gizmolab.gizbookspace.feature.home.navigation.HomeRoute
+import io.gizmolab.gizbookspace.feature.home.navigation.homeScreen
+import io.gizmolab.gizbookspace.feature.libraries.navigation.librariesScreen
+import io.gizmolab.gizbookspace.feature.search.navigation.searchScreen
+import io.gizmolab.gizbookspace.feature.settings.navigation.navigateToSettings
+import io.gizmolab.gizbookspace.feature.settings.navigation.settingsScreen
 
+/** Features don't know about each other; navigation between them is wired here. */
 @Composable
 fun GizBookNavHost(
     navController: NavHostController,
     modifier: Modifier = Modifier,
 ) {
+    val onBookClick: (String) -> Unit = { bookId -> navController.navigateToBookDetails(bookId) }
+
     NavHost(
         navController = navController,
-        startDestination = Home,
+        startDestination = HomeRoute,
         modifier = modifier,
     ) {
-        composable<Home> { HomeScreen() }
-        composable<Catalogue> { CatalogueScreen() }
-        composable<Libraries> { LibrariesScreen() }
-        composable<Settings> { SettingsScreen() }
+        homeScreen(onBookClick = onBookClick, onSettingsClick = navController::navigateToSettings)
+        searchScreen()
+        catalogueScreen()
+        librariesScreen()
+        favoritesScreen(onBookClick = onBookClick)
+
+        bookDetailsScreen(onBackClick = navController::popBackStack)
+        settingsScreen(onBackClick = navController::popBackStack)
     }
 }

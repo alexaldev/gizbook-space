@@ -1,0 +1,5 @@
+<resources>
+    <string name="home_title">GizBook Space</string>
+    <string name="home_newly_added">Newly added</string>
+    <string name="home_open_settings">Settings</string>
+</resources>

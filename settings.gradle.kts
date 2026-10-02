@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -22,6 +23,26 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "GizBook Space"
+rootProject.name = "GizBookSpace"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 include(":app")
+
+include(":core:common")
+include(":core:model")
+include(":core:designsystem")
+include(":core:ui")
+include(":core:network")
+include(":core:database")
+include(":core:datastore")
+include(":core:data")
+include(":core:testing")
+
+include(":feature:home")
+include(":feature:catalogue")
+include(":feature:search")
+include(":feature:bookdetails")
+include(":feature:libraries")
+include(":feature:favorites")
+include(":feature:settings")
  

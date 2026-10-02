@@ -1,5 +1,6 @@
 package io.gizmolab.gizbookspace.presentation
 
+import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -39,7 +40,8 @@ fun GizBookApp(modifier: Modifier = Modifier) {
     ) { innerPadding ->
         GizBookNavHost(
             navController = navController,
-            modifier = Modifier.padding(innerPadding),
+            // Consumed as well as applied, so the screens' own top bars don't add the insets again.
+            modifier = Modifier.padding(innerPadding).consumeWindowInsets(innerPadding),
         )
     }
 }

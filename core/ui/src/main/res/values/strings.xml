@@ -1,0 +1,9 @@
+<resources>
+    <string name="core_ui_retry">Try again</string>
+
+    <string name="core_ui_error_no_connection">Can\'t reach the library service. Check your connection.</string>
+    <string name="core_ui_error_not_found">That book couldn\'t be found.</string>
+    <string name="core_ui_error_server">The library service had a problem. Try again later.</string>
+    <string name="core_ui_error_generic">Something went wrong.</string>
+    <string name="core_ui_error_disk_full">Your device is out of storage.</string>
+</resources>

@@ -134,3 +134,7 @@ naming:
     # @Composable functions are PascalCase by convention, which the default
     # [a-z][a-zA-Z0-9]* pattern rejects.
     ignoreAnnotated: ['Composable']
+  MatchingDeclarationName:
+    # Each feature's navigation/<Feature>Navigation.kt holds its route type alongside the
+    # NavGraphBuilder/NavController extensions for it, by convention.
+    excludes: ['**/navigation/*Navigation.kt']

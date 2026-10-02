@@ -36,4 +36,4 @@ fun GizBookBottomBar(
  * stays selected once its screens push their own destinations on top.
  */
 private fun NavDestination?.isOn(destination: TopLevelDestination): Boolean =
-    this?.hierarchy?.any { it.hasRoute(destination.route::class) } == true
+    this?.hierarchy?.any { it.hasRoute(destination.routeClass) } == true

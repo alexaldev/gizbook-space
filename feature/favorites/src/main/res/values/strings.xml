@@ -1,0 +1,4 @@
+<resources>
+    <string name="favorites_title">Favourites</string>
+    <string name="favorites_empty">Books you favourite show up here.</string>
+</resources>
